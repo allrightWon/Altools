@@ -28,9 +28,9 @@ $(
       slick() {
         // Slick Slider
         $(".main-slide").slick({
-          // autoplay: true,
+          autoplay: true,
           speed: 1000,
-          // autoplaySpeed: 4000,
+          autoplaySpeed: 4000,
         });
         $(".banner-slide").slick({
           arrows: true,
