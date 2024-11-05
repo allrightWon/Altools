@@ -7,6 +7,15 @@ $(
         this.footer();
       },
       header() {
+        // Header Scroll Event
+        $(window).scroll(function () {
+          let scrollTop = $(this).scrollTop();
+          if (scrollTop >= 100) {
+            $("header").addClass("active");
+          } else {
+            $("header").removeClass("active");
+          }
+        });
         // Header Nav Dropdown
         $(".nav-cs").mouseenter(function () {
           $(".cs-drop").show();
